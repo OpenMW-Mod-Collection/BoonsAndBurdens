@@ -1,0 +1,12 @@
+page_name: Character Traits - Boons and Burdens
+page_description: Settings for Boons and Burdens backgrounds.
+
+insecureConjurer_groupName: Insecure Conjurer
+disobeyChance_name: Disobey Chance (%)
+
+msg_summonTurned_1: Your {summon_name} senses your doubt. It has decided to act on it.
+msg_summonTurned_2: "{summon_name} slips your grasp. It does not look pleased."
+msg_summonTurned_3: You feel your hold on {summon_name} fracture. It turns to face you.
+msg_summonTurned_4: "{summon_name} was never truly yours to command."
+msg_summonTurned_5: Your grip on {summon_name} falters. The creature notices.
+msg_summonTurned_6: "{summon_name} grows tired of your hesitation."
