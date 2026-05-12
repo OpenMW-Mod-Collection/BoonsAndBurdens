@@ -47,8 +47,19 @@ deps.checkAll = function(modName, depList)
         end
     end
     if #errors > 0 then
-        local msg = ("[%s]\nDependency error.\n\n%s\n"):format(modName, table.concat(errors, "\n\n"))
-        I.UI.showInteractiveMessage(msg)
+        -- Print full details to the console/log for debugging
+        print(("[%s] Dependency error:"):format(modName))
+        for _, err in ipairs(errors) do
+            print(("  - %s"):format(err))
+        end
+
+        -- Show a generic, user-friendly message in-game
+        I.UI.showInteractiveMessage(
+            "[Sosnoviy Bor's Mods]\n\n" ..
+            "Whoops! Seems like something went wrong!\n\n" ..
+            "Check your logs by either pressing F10 or checking the openmw.log file.\n\n" ..
+            "This is a user error and it shouldn't be reported to the mod author."
+        )
     end
 end
 

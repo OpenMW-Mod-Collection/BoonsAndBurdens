@@ -1,5 +1,4 @@
 local core = require("openmw.core")
-local types = require("openmw.types")
 
 local l10n = core.l10n("BoonsAndBurdens")
 
