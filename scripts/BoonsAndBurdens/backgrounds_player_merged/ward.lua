@@ -21,10 +21,14 @@ I.CharacterTraits.addTrait {
         "\n" ..
         "+15 Conjuration\n" ..
         "+2x Max Magicka\n" ..
+        "-15 Endurance\n" ..
         "> All weapon skills and destruction are capped at 25\n" ..
         "> You start with a warding glove"
     ),
     doOnce = function()
+        local endurance = self.type.stats.attributes.endurance(self)
+        endurance.base = endurance.base - 15
+
         self.type.spells(self):add("sillyandserious_ward")
         core.sendGlobalEvent(
             "BoonsAndBurdens_addItems",

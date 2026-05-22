@@ -17,7 +17,7 @@ I.CharacterTraits.addTrait {
         "\n" ..
         "+15 Speechcraft\n" ..
         "+30 Mercantile\n" ..
-        "> You drop any gold you pick up"
+        "> All your gold drops on the ground"
     ),
     doOnce = function()
         local merc = self.type.stats.skills.mercantile(self)
