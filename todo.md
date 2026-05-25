@@ -13,3 +13,4 @@ Test:
 
 - Wayfarer
 - Hedge Conjurer
+- Hedge Mage

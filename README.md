@@ -108,6 +108,22 @@ As a young apprentice-clerk, you were paid to transcribe a restricted magical te
 
 > Note: My first instance of tailoring a background for a specific character - breton clerk which will dive into TR's Hlaalu and [Death and Taxes](https://www.nexusmods.com/morrowind/mods/58469) questlines. Making something specific for a specific character feels awesome and should try it too.
 
+### Hedge Mage
+
+You were born with the magical talents fit of a high court wizard. Unfortunately for you, you were born far from any court and deprived of a life of privilege. In the streets, you learned to use your magic to survive, first through petty theft, then far darker crimes. As your power grew, so did your ambition, and the line between survival and greed slowly disappeared.
+
+When the law is hunting you, old instincts awaken, and the streets once again become your greatest ally. But a life spent hunted like an animal leaves scars on the mind. Constant paranoia and the need to always watch your back slowly wear away your resolve.
+
+For every 100 bounty (up to 1000) you get:
+
+- +0.1 Fortify Magicka
+- +1 Illusion
+- +1 Conjuration
+- +1 Short Blade
+- +1 Sneak
+- -2 Agility
+- -2 Willpower
+
 </details>
 
 ## Installation
@@ -135,3 +151,4 @@ Seriously, they will enhance your experience with these backgrounds.
 **AlandroSul** - Inspiration ([The Wretched and the Weird](https://www.nexusmods.com/morrowind/mods/55570))  
 **dabiggieboss and shazdeh2** - Inspiration ([Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384))  
 **AnonymousAugustus** - Idea for Ward background
+**moonless and StyX2115** - The Hedge Mage background concept and writing
