@@ -13,7 +13,7 @@ Something bit you on the road here. You felt feverish the next morning and convi
 
 - You start with Porphyric Hemophilia of your choice.
 
-> Note: Initially was planned as a port of [JosephMcKean's Vampire background](https://www.nexusmods.com/morrowind/mods/52978) for MWSE, but due to differences in approach caused by engine limitations (not instant transformation, but with 3 day grace period) I figured that it would make more sense to release it separately.
+> Note: Initially was planned as a port of [JosephMcKean's MWSE Vampire background](https://www.nexusmods.com/morrowind/mods/52978) for the [Community Traits Ported](https://www.nexusmods.com/morrowind/mods/58704), but due to differences in approach caused by engine limitations (not instant transformation, but with 3 day grace period) I figured that it would make more sense to release it separately.
 
 ### Blessed by Clavicus
 
