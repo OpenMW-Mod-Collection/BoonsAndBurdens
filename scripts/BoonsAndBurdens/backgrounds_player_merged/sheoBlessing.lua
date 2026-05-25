@@ -8,7 +8,10 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Blessed by Sheogorath",
     description = (
-        "You prayed at the wrong shrine. Or the right one. It's genuinely hard to tell with him. He answered, regardless.\n" ..
+        "You prayed at the wrong shrine. Or perhaps the right one - " ..
+        "it is genuinely difficult to say with him. He answered regardless. " ..
+        "What you were before that day and what you became after are " ..
+        "questions you have long since stopped trying to answer.\n" ..
         "\n" ..
         "> All your skills and attributes are randomized from 0 to 100"
     ),

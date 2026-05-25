@@ -6,14 +6,14 @@ I.CharacterTraits.addTrait({
     type = "background",
     name = "Wayfarer",
     description = (
-        "No master, no forge, no proper tools. "
-        .. "You learned to maintain your gear the hard way - "
-        .. "on the road, with whatever you had. "
-        .. "It is never pretty work, but it holds.\n"
-        .. "\n"
-        .. "+10 Armorer and Athletics\n"
-        .. "+5 Spear and Marksman\n"
-        .. "-15 Mercantile and Speechcraft"
+        "You never had a master to learn from, a forge to work at, or the right tools for the job. " ..
+        "What you had was the road, and the road taught you what it could. " ..
+        "Your gear has never been pretty work, but it holds - it has always held. " ..
+        "Settlements and the people in them came less naturally, and the years away have not helped.\n" ..
+        "\n" ..
+        "+10 Armorer and Athletics\n" ..
+        "+5 Spear and Marksman\n" ..
+        "-15 Mercantile and Speechcraft"
     ),
     doOnce = function()
         local skills = self.type.stats.skills

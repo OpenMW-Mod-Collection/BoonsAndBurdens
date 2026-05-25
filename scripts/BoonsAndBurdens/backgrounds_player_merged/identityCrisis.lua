@@ -8,7 +8,11 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Identity Crisis",
     description = (
-        "You know exactly who you are. You're just not entirely sure which parts of you are supposed to go where.\n" ..
+        "vSomething happened - you have never been entirely clear on what. " ..
+        "The person you were before it and the person you became after share " ..
+        "the same memories, the same face, the same instincts. " ..
+        "Just not, apparently, the same arrangement. You know exactly who you are. " ..
+        "You are simply not certain which parts of you are supposed to go where.\n" ..
         "\n" ..
         "> All your skill and attribute levels are shuffled"
     ),

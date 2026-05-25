@@ -17,26 +17,26 @@ Something bit you on the road here. You felt feverish the next morning and convi
 
 ### Blessed by Clavicus
 
-You struck a deal with Clavicus Vile and got exactly what you asked for. A silver tongue, a head for numbers, an instinct for value. You neglected to specify you wanted to keep any of it. The Prince found that very amusing.
+You struck a bargain with Clavicus Vile and received exactly what you asked for - a silver tongue, a head for numbers, an instinct for value. You had neglected to specify that you wanted to keep any of it. The Prince found that very amusing.
 
 - +30 Mercantile
 - All your gold drops on the ground.
 
 ### Blessed by Sheogorath
 
-You prayed at the wrong shrine. Or the right one. It's genuinely hard to tell with him. He answered, regardless.
+You prayed at the wrong shrine. Or perhaps the right one - it is genuinely difficult to say with him. He answered regardless. What you were before that day and what you became after are questions you have long since stopped trying to answer.
 
 - All attributes and skills are randomized.
 
 ### Blessed by Jyggalag
 
-A forgotten god of Order heard your prayer and brought perfect symmetry to your being. Every strength tempered, every weakness lifted. Equality in all things. Whether this is a blessing or a curse depends entirely on your tolerance for mediocrity.
+You sought the shrine of a god most have forgotten - the Prince of Order, whose name is no longer spoken among the Daedra. He heard you regardless. What followed was less a transformation than a correction: every strength you carried was tempered, every weakness raised to meet it. You emerged perfectly balanced, perfectly symmetrical, perfectly mediocre. Whether Jyggalag intended this as a blessing, you never determined. Order, you have since learned, does not concern itself with your feelings on the matter.
 
 - All attributes and skills are evened out.
 
 ### Identity Crisis
 
-You know exactly who you are. You're just not entirely sure which parts of you are supposed to go where.
+Something happened - you have never been entirely clear on what. The person you were before it and the person you became after share the same memories, the same face, the same instincts. Just not, apparently, the same arrangement. You know exactly who you are. You are simply not certain which parts of you are supposed to go where.
 
 - All attributes and skills are shuffled.
 
@@ -44,7 +44,7 @@ You know exactly who you are. You're just not entirely sure which parts of you a
 
 ### Cartographer
 
-Your body was never your strong suit. But the thought of unseen roads, uncharted coasts, and places with no name on any map kept you moving long after common sense said to stop. You'll probably catch something out there. You always do.
+You were never built for the road. You went anyway. Unseen coastlines, passes without names, places that existed on no map you had ever found - these were enough to keep you moving long after common sense said to stop. Every new horizon taught you something; every illness you picked up along the way was simply the cost of the lesson. You have caught a great many things out there. You always do.
 
 - +10 Athletics
 - -10 Strength
@@ -63,7 +63,7 @@ You were never much of a fighter, and the faint ancestor spirit that has followe
 
 ### Insecure Conjurer
 
-You have a gift for pulling things from the other side. Holding them there is another matter entirely. The theory is sound, the practice less so - your summons arrive willingly enough, but bound creatures sense weakness in their master. And yours sense plenty of it.
+The talent was there from the start - tutors said as much, and for once they were right. You could pull things from the other side before most students had learned the first binding words. Keeping them there was another matter. Bound creatures sense weakness in their master, and yours always found it quickly. Somewhere along the way the failures began to outweigh the reassurances, and they have never quite balanced out since.
 
 - +20 Conjuration
 - -15 Willpower
@@ -72,9 +72,9 @@ You have a gift for pulling things from the other side. Holding them there is an
 
 > Note: Disobedience chance can be changed in settings.
 
-### Hedge Conjurer
+### Oathless
 
-You learned the words of binding, but never the full oaths. Daedra answer your call readily - the price is low, the contract thin - but what crosses the veil arrives incomplete, half-formed, its strength spent in the passage.
+You never learned the full rites. Whether the training was cut short, the teacher unreliable, or the patience simply not there, the oaths were never spoken in full - and the Daedra you call upon have always known it. They answer readily enough; the price is low, the contract thin. What crosses the veil in response arrives incomplete, half-formed, its strength spent somewhere in the passage. You have made your peace with it.
 
 - +10 Conjuration
 - +10 Intelligence
@@ -84,14 +84,14 @@ You learned the words of binding, but never the full oaths. Daedra answer your c
 
 ### Wayfarer
 
-No master, no forge, no proper tools. You learned to maintain your gear the hard way - on the road, with whatever you had. It is never pretty work, but it holds.
+You never had a master to learn from, a forge to work at, or the right tools for the job. What you had was the road, and the road taught you what it could. Your gear has never been pretty work, but it holds - it has always held. Settlements and the people in them came less naturally, and the years away have not helped.
 
 - +10 Armorer
 - +10 Athletics
 - +5 Spear
 - +5 Marksman
 - -15 Mercantiles
-- -15 Speechcraftidk
+- -15 Speechcraft
 
 ### Voidscarred Copyist
 
@@ -99,7 +99,7 @@ As a young apprentice-clerk, you were paid to transcribe a restricted magical te
 
 ***Requirements: Stunted Magicka ability***
 
-- +15% Speel Absorption
+- +15% Spell Absorption
 - +5 Intelligence
 - +5 Mercantile
 - -10 Endurance
@@ -123,6 +123,16 @@ For every 100 bounty (up to 1000) you get:
 - +1 Sneak
 - -2 Agility
 - -2 Willpower
+
+### Blessed by Molag Bal
+
+In a moment of desperation - or ambition, or weakness - you made an offering at a shrine of Molag Bal. He accepted. Your magicka swelled and your grip on bound servants sharpened, but your body grew hollow, the tithe he demanded paid in flesh and endurance. Those who have walked beside you since bear a burden they never agreed to: the Prince of Domination has made them your shield, just as he makes all things serve the strong.
+
+- +10 Conjuration
+- +50 Max Magicka
+- -20 Endurance
+- -30 Max Health
+- All incoming melee attacks are redirected towards one of your random followers
 
 </details>
 
@@ -150,5 +160,5 @@ Seriously, they will enhance your experience with these backgrounds.
 **JosephMcKean** - Inspiration ([Background - The Vampire](https://www.nexusmods.com/morrowind/mods/52978))  
 **AlandroSul** - Inspiration ([The Wretched and the Weird](https://www.nexusmods.com/morrowind/mods/55570))  
 **dabiggieboss and shazdeh2** - Inspiration ([Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384))  
-**AnonymousAugustus** - Idea for Ward background
-**moonless and StyX2115** - The Hedge Mage background concept and writing
+**AnonymousAugustus** - Idea for Ward background  
+**moonless and StyX2115** - The Hedge Mage background concept and writing  

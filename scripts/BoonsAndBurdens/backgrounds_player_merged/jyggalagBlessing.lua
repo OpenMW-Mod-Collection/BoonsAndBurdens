@@ -8,9 +8,13 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Blessed by Jyggalag",
     description = (
-        "A forgotten god of Order heard your prayer and brought perfect symmetry to your being. " ..
-        "Every strength tempered, every weakness lifted. Equality in all things. " ..
-        "Whether this is a blessing or a curse depends entirely on your tolerance for mediocrity.\n" ..
+        "You sought the shrine of a god most have forgotten - the Prince of Order, " ..
+        "whose name is no longer spoken among the Daedra. He heard you regardless. " ..
+        "What followed was less a transformation than a correction: every strength " ..
+        "you carried was tempered, every weakness raised to meet it. " ..
+        "You emerged perfectly balanced, perfectly symmetrical, perfectly mediocre. " ..
+        "Whether Jyggalag intended this as a blessing, you never determined. Order, " ..
+        "you have since learned, does not concern itself with your feelings on the matter.\n" ..
         "\n" ..
         "> All your skills and attributes are evened out"
     ),

@@ -14,3 +14,4 @@ Test:
 - Wayfarer
 - Hedge Conjurer
 - Hedge Mage
+- Blessed by Molag Bal

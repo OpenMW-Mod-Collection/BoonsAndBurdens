@@ -7,10 +7,11 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Insecure Conjurer",
     description = (
-        "You have a gift for pulling things from the other side. " ..
-        "Holding them there is another matter entirely. " ..
-        "The theory is sound, the practice less so - your summons arrive willingly enough, " ..
-        "but bound creatures sense weakness in their master. And yours sense plenty of it.\n" ..
+        "The talent was there from the start - tutors said as much, and for once they were right. " ..
+        "You could pull things from the other side before most students had learned the first binding words. " ..
+        "Keeping them there was another matter. Bound creatures sense weakness in their master, " ..
+        "and yours always found it quickly. Somewhere along the way the failures began to outweigh the reassurances, " ..
+        "and they have never quite balanced out since.\n" ..
         "\n" ..
         "+20 Conjuration\n" ..
         "-15 Willpower\n" ..

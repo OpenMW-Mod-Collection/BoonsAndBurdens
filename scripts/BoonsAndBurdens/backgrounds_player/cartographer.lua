@@ -15,9 +15,11 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Cartographer",
     description = (
-        "Your body was never your strong suit. But the thought of unseen roads, uncharted coasts, " ..
-        "and places with no name on any map kept you moving long after common sense said to stop. " ..
-        "You'll probably catch something out there. You always do.\n" ..
+        "You were never built for the road. You went anyway. " ..
+        "Unseen coastlines, passes without names, places that existed on no map you had ever found - " ..
+        "these were enough to keep you moving long after common sense said to stop. " ..
+        "Every new horizon taught you something; every illness you picked up along the way " ..
+        "was simply the cost of the lesson. You have caught a great many things out there. You always do.\n" ..
         "\n" ..
         "+10 Athletics\n" ..
         "-10 Strength\n" ..

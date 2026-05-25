@@ -3,14 +3,16 @@ local self = require("openmw.self")
 local core = require("openmw.core")
 
 I.CharacterTraits.addTrait {
-    id = "BaB_hedgeConjurer",
+    id = "BaB_oathless",
     type = "background",
-    name = "Hedge Conjurer",
+    name = "Oathless",
     description = (
-        "You learned the words of binding, but never the full oaths. " ..
-        "Daedra answer your call readily - the price is low, the contract thin - " ..
-        "but what crosses the veil arrives incomplete, " ..
-        "half-formed, its strength spent in the passage.\n" ..
+        "You never learned the full rites. Whether the training was cut short, " ..
+        "the teacher unreliable, or the patience simply not there, the oaths " ..
+        "were never spoken in full - and the Daedra you call upon have always known it. " ..
+        "They answer readily enough; the price is low, the contract thin. " ..
+        "What crosses the veil in response arrives incomplete, half-formed, " ..
+        "its strength spent somewhere in the passage. You have made your peace with it.\n" ..
         "\n" ..
         "+10 Conjuration and Intelligence\n" ..
         "-10 Willpower\n" ..

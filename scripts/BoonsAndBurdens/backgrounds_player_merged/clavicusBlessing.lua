@@ -11,9 +11,10 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Blessed by Clavicus",
     description = (
-        "You struck a deal with Clavicus Vile and got exactly what you asked for. " ..
-        "A silver tongue, a head for numbers, an instinct for value. " ..
-        "You neglected to specify you wanted to keep any of it. The Prince found that very amusing.\n" ..
+        "You struck a bargain with Clavicus Vile and received exactly what you asked for - " ..
+        "a silver tongue, a head for numbers, an instinct for value. " ..
+        "You had neglected to specify that you wanted to keep any of it. " ..
+        "The Prince found that very amusing.\n" ..
         "\n" ..
         "+15 Speechcraft\n" ..
         "+30 Mercantile\n" ..
