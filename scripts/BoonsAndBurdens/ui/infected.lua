@@ -9,7 +9,7 @@ local I = require("openmw.interfaces")
 local self = require("openmw.self")
 local core = require("openmw.core")
 
-local buttonTemplate = require("scripts.BoonsAndBurdens.utils.button.init")
+local buttonTemplate = require("scripts.BoonsAndBurdens.utils.button")
 
 local textSize = 16
 

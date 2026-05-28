@@ -4,6 +4,8 @@
 local registeredPlayers = {}
 local healthTable = {}
 
+local healthReductionScript = "scripts/BoonsAndBurdens/backgrounds_custom/oathless.lua"
+
 local function followerListUpdated(data)
     if not next(registeredPlayers) then return end
     for _, fState in pairs(data.followers) do
@@ -21,7 +23,7 @@ local function followerListUpdated(data)
         local health = fState.actor.type.stats.dynamic.health(fState.actor)
         if not healthTable[fState.actor.recordId] or healthTable[fState.actor.recordId] >= health.base then
             healthTable[fState.actor.recordId] = health.base
-            health.base = health.base / 2
+            fState.actor:addScript(healthReductionScript)
         end
 
         ::continue::

@@ -123,7 +123,7 @@ I.CharacterTraits.addTrait {
                 lastConjProgress = conjuration.progress
             elseif stopKeys[key] then
                 local selectedSpell = self.type.getSelectedSpell(self)
-                if not selectedSpell or selectedSpell ~= core.magic.SPELL_TYPE.Spell then return end
+                if not selectedSpell or selectedSpell.type ~= core.magic.SPELL_TYPE.Spell then return end
 
                 for _, effect in ipairs(selectedSpell.effects) do
                     if not summonEffects[effect.id] then
