@@ -35,7 +35,7 @@ I.CharacterTraits.addTrait {
         local athletics = self.type.stats.skills.athletics(self)
         athletics.base = athletics.base + 10
         ---@diagnostic disable-next-line: param-type-mismatch
-        self.type.spells(self):add("sillyandserious_cartographer")
+        self.type.spells(self):add("bab_cartographer")
     end,
     onLoad = function()
         time.runRepeatedly(

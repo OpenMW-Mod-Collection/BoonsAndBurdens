@@ -1,8 +1,8 @@
 # Boons and Burdens (OpenMW)
 
-Expansion pack for Character Traits Framework with X new backgrounds.
+Expansion pack for Character Traits Framework with many new scripted backgrounds.
 
-Mishmash of ideas I had while and after working on [Community Traits Ported](https://www.nexusmods.com/morrowind/mods/58704). Some are more serious than others.
+This is a mishmash of ideas I had while and after working on [Community Traits Ported](https://www.nexusmods.com/morrowind/mods/58704). Some are more serious than others.
 
 <details>
 <summary>Click me!</summary>
@@ -123,7 +123,7 @@ In a moment of desperation - or ambition, or weakness - you made an offering at 
 - +50 Max Magicka
 - -20 Endurance
 - -30 Max Health
-- All incoming melee attacks are redirected towards one of your random followers
+- All incoming melee attacks are redirected towards one of your random followers if you have any
 
 </details>
 
@@ -131,7 +131,7 @@ In a moment of desperation - or ambition, or weakness - you made an offering at 
 
 ### Requirements
 
-Load this mod after the requirements.
+Load this trait pack **after** the requirements.
 
 - [Character Traits Framework](https://www.nexusmods.com/morrowind/mods/58703)
 - [Follower Detection Util](https://www.nexusmods.com/morrowind/mods/58053)

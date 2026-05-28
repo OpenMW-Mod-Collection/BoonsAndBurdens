@@ -31,12 +31,12 @@ I.CharacterTraits.addTrait {
         local endurance = self.type.stats.attributes.endurance(self)
         endurance.base = endurance.base - 15
 
-        self.type.spells(self):add("sillyandserious_ward")
+        self.type.spells(self):add("bab_ward")
         core.sendGlobalEvent(
             "BoonsAndBurdens_addItems",
             { {
                 player = self,
-                itemId = "sillyandserious_helping_hand",
+                itemId = "bab_helpinghand",
                 count = 1,
                 autoEquip = true,
             } }

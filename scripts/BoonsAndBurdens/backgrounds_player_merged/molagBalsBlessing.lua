@@ -21,7 +21,7 @@ I.CharacterTraits.addTrait {
         "+50 Max Magicka\n" ..
         "-20 Endurance\n" ..
         "-30 Max HP\n" ..
-        "> All incoming melee attacks are redirected towards one of your random followers"
+        "> All incoming melee attacks are redirected towards one of your random followers if you have any"
     ),
     doOnce = function()
         local conjuration = self.type.stats.skills.conjuration(self)

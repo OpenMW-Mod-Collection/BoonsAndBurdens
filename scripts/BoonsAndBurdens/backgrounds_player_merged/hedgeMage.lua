@@ -96,10 +96,10 @@ I.CharacterTraits.addTrait {
                 applyBountyModifiers(currBountyLevel)
 
                 if lastBountyLevel ~= 0 then
-                    selfSpells:remove(("BaB_HedgeMage_%d"):format(lastBountyLevel))
+                    selfSpells:remove(("bab_hedgemage_%d"):format(lastBountyLevel))
                 end
                 if currBountyLevel ~= 0 then
-                    selfSpells:add(("BaB_HedgeMage_%d"):format(currBountyLevel))
+                    selfSpells:add(("bab_hedgemage_%d"):format(currBountyLevel))
                 end
 
                 lastBountyLevel = currBountyLevel
