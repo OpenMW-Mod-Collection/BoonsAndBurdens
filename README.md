@@ -127,21 +127,18 @@ In a moment of desperation - or ambition, or weakness - you made an offering at 
 
 </details>
 
-## Installation
-
-### Requirements
+## Requirements
 
 Load this trait pack **after** the requirements.
 
 - [Character Traits Framework](https://www.nexusmods.com/morrowind/mods/58703)
 - [Follower Detection Util](https://www.nexusmods.com/morrowind/mods/58053)
 
-### Recommended Mods
+## Recommended Mods
 
 Seriously, they will enhance your experience with these backgrounds.
 
 - [Truly Constant Effects](https://www.nexusmods.com/morrowind/mods/57175)
-- [Disobedient Summons](https://www.nexusmods.com/morrowind/mods/58542)
 - [Follower Commands](https://www.nexusmods.com/morrowind/mods/58818)
 - [Jammings off](https://www.nexusmods.com/morrowind/mods/44523)
 
