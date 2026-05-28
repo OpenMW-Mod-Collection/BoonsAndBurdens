@@ -25,12 +25,8 @@ I.CharacterTraits.addTrait {
         "\n" ..
         "> For every 100 bounty you posess up to a 1000 you get:\n" ..
         "+0.1x Fortify Magicka\n" ..
-        "+1 Illusion\n" ..
-        "+1 Conjuration\n" ..
-        "+1 Short Blade\n" ..
-        "+1 Sneak\n" ..
-        "-2 Agility\n" ..
-        "-2 Willpower"
+        "+1 Illusion, Conjuration, Short Blade and Sneak\n" ..
+        "-2 Willpower and Agility"
     ),
     doOnce = function()
         initted = false
@@ -40,8 +36,7 @@ I.CharacterTraits.addTrait {
         local maxBounty = 1000
         local selfSkills = self.type.stats.skills
         local selfAttrs = self.type.stats.attributes
-        local selfEffects = self.type.activeEffects(self)
-        local FORTIFY_MAGICKA = core.magic.EFFECT_TYPE.FortifyMagicka
+        local selfSpells = self.type.spells(self)
         local statModifiers = {
             { stat = selfSkills.illusion(self),    multiplier = 1 },
             { stat = selfSkills.conjuration(self), multiplier = 1 },
@@ -81,6 +76,9 @@ I.CharacterTraits.addTrait {
 
         local lastBountyLevel = initted and getBountyLevel() or 0
         local currBountyLevel = 0
+        if not initted and lastBountyLevel ~= 0 then
+            applyBountyModifiers(lastBountyLevel)
+        end
 
         time.runRepeatedly(function()
             for _, entry in ipairs(statModifiers) do
@@ -94,15 +92,21 @@ I.CharacterTraits.addTrait {
 
             currBountyLevel = getBountyLevel()
             if lastBountyLevel ~= currBountyLevel then
-                applyBountyModifiers(-1)
-                ---@diagnostic disable-next-line: missing-parameter
-                selfEffects:modify(
-                    (currBountyLevel - lastBountyLevel) * fortMagickaMult,
-                    FORTIFY_MAGICKA
-                )
+                applyBountyModifiers(-lastBountyLevel)
+                applyBountyModifiers(currBountyLevel)
+
+                if lastBountyLevel ~= 0 then
+                    selfSpells:remove(("BaB_HedgeMage_%d"):format(lastBountyLevel))
+                end
+                if currBountyLevel ~= 0 then
+                    selfSpells:add(("BaB_HedgeMage_%d"):format(currBountyLevel))
+                end
+
                 lastBountyLevel = currBountyLevel
-                applyBountyModifiers(1)
             end
         end, 1)
+
+        -- thechnically doesn't matter, but just in case
+        initted = true
     end
 }

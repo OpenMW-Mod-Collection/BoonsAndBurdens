@@ -76,8 +76,7 @@ The talent was there from the start - tutors said as much, and for once they wer
 
 You never learned the full rites. Whether the training was cut short, the teacher unreliable, or the patience simply not there, the oaths were never spoken in full - and the Daedra you call upon have always known it. They answer readily enough; the price is low, the contract thin. What crosses the veil in response arrives incomplete, half-formed, its strength spent somewhere in the passage. You have made your peace with it.
 
-- +10 Conjuration
-- +10 Intelligence
+- +10 Conjuration and Intelligence
 - -10 Willpower
 - You recover 66% of magicka from summoning spells
 - Your summons spawn with only 50% max health
@@ -86,12 +85,9 @@ You never learned the full rites. Whether the training was cut short, the teache
 
 You never had a master to learn from, a forge to work at, or the right tools for the job. What you had was the road, and the road taught you what it could. Your gear has never been pretty work, but it holds - it has always held. Settlements and the people in them came less naturally, and the years away have not helped.
 
-- +10 Armorer
-- +10 Athletics
-- +5 Spear
-- +5 Marksman
-- -15 Mercantiles
-- -15 Speechcraft
+- +10 Armorer and Athletics
+- +5 Spear and Marksman
+- -15 Mercantiles and Speechcraft
 
 ### Voidscarred Copyist
 
@@ -100,8 +96,7 @@ As a young apprentice-clerk, you were paid to transcribe a restricted magical te
 ***Requirements: Stunted Magicka ability***
 
 - +15% Spell Absorption
-- +5 Intelligence
-- +5 Mercantile
+- +5 Intelligence and Mercantile
 - -10 Endurance
 - -20 Luck
 - You start with an Absorb Magicka power which backfires and also damages Intelligence
@@ -117,12 +112,8 @@ When the law is hunting you, old instincts awaken, and the streets once again be
 For every 100 bounty (up to 1000) you get:
 
 - +0.1 Fortify Magicka
-- +1 Illusion
-- +1 Conjuration
-- +1 Short Blade
-- +1 Sneak
-- -2 Agility
-- -2 Willpower
+- +1 Illusion, Conjuration, Short Blade and Sneak
+- -2 Agility and Willpower
 
 ### Blessed by Molag Bal
 

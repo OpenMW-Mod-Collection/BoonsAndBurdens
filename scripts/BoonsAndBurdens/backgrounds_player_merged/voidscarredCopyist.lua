@@ -17,8 +17,7 @@ I.CharacterTraits.addTrait {
         "Requirements: Stunted Magicka ability.\n" ..
         "\n" ..
         "+15% Spell Absorption\n" ..
-        "+5 Intelligence\n" ..
-        "+5 Mercantile\n" ..
+        "+5 Intelligence and Mercantile\n" ..
         "-10 Endurance\n" ..
         "-20 Luck\n" ..
         "> You start with an Absorb Magicka power which backfires and also damages Intelligence"

@@ -35,13 +35,16 @@ I.CharacterTraits.addTrait {
         health.base = health.base - 30
     end,
     onLoad = function()
+        local followers = {}
+        local indexedFollowers = {}
         I.Combat.addOnHitHandler(function(attack)
             if not attack or not attack.successful then return end
 
-            local followers = I.FollowerDetectionUtil.getFollowerList()
-            local indexedFollowers = {}
+            followers = I.FollowerDetectionUtil.getFollowerList()
             for _, state in pairs(followers) do
-                if state.leader.id == self.id or state.superLeader.id == self.id then
+                local followsMe = (state.leader and state.leader.id == self.id) or
+                    (state.superLeader and state.superLeader.id == self.id)
+                if followsMe then
                     indexedFollowers[#indexedFollowers + 1] = state.actor
                 end
             end
@@ -49,6 +52,7 @@ I.CharacterTraits.addTrait {
 
             local newAttackTarget = indexedFollowers[math.random(#indexedFollowers)]
             newAttackTarget:sendEvent("Hit", attack)
+            indexedFollowers = {}
             return false
         end)
     end
