@@ -1,3 +1,5 @@
+---@diagnostic disable: assign-type-mismatch
+---@omw-context local | global
 local util = require("openmw.util")
 local core = require('openmw.core')
 

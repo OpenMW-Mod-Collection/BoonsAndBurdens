@@ -1,3 +1,5 @@
+---@omw-context player
+---@diagnostic disable: assign-type-mismatch
 ---@diagnostic disable: duplicate-doc-field
 local core = require("openmw.core")
 local I = require("openmw.interfaces")
@@ -54,6 +56,7 @@ deps.checkAll = function(modName, depList)
         end
 
         -- Show a generic, user-friendly message in-game
+        ---@diagnostic disable-next-line: missing-parameter
         I.UI.showInteractiveMessage(
             "[Sosnoviy Bor's Mods]\n\n" ..
             "Whoops! Seems like something went wrong!\n\n" ..

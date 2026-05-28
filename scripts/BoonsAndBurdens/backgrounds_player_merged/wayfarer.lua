@@ -1,3 +1,5 @@
+---@omw-context player
+---@diagnostic disable: undefined-field
 local I = require("openmw.interfaces")
 local self = require("openmw.self")
 

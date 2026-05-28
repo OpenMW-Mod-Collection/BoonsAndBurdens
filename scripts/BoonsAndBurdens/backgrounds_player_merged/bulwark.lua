@@ -5,9 +5,9 @@ local I = require("openmw.interfaces")
 local self = require("openmw.self")
 
 I.CharacterTraits.addTrait {
-    id = "BaB_molagBalsBlessing",
+    id = "BaB_bulwark",
     type = "background",
-    name = "Blessed by Molag Bal",
+    name = "Bulwark",
     description = (
         "In a moment of desperation - or ambition, or weakness - " ..
         "you made an offering at a shrine of Molag Bal. He accepted. " ..
@@ -17,11 +17,11 @@ I.CharacterTraits.addTrait {
         "the Prince of Domination has made them your shield, " ..
         "just as he makes all things serve the strong.\n" ..
         "\n" ..
-        "+10 Conjuration\n" ..
-        "+50 Max Magicka\n" ..
-        "-20 Endurance\n" ..
-        "-30 Max HP\n" ..
-        "> All incoming melee attacks are redirected towards one of your random followers"
+        "+5 Conjuration and \n" ..
+        "+10 Block\n" ..
+        "+10 All Armor Skills\n" ..
+        "-15 All Weapon Skills and Destruction\n" ..
+        "> You take "
     ),
     doOnce = function()
         local conjuration = self.type.stats.skills.conjuration(self)

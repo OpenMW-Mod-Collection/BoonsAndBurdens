@@ -1,3 +1,5 @@
+---@omw-context global
+---@diagnostic disable: missing-fields
 local I = require('openmw.interfaces')
 
 I.Settings.registerGroup {

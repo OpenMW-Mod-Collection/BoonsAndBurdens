@@ -1,3 +1,4 @@
+---@omw-context player
 local I = require("openmw.interfaces")
 local util = require("openmw.util")
 local v2 = util.vector2

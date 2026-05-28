@@ -1,3 +1,5 @@
+---@diagnostic disable: assign-type-mismatch
+---@omw-context local | global
 local core = require("openmw.core")
 
 local l10n = core.l10n("BoonsAndBurdens")

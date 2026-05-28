@@ -1,3 +1,6 @@
+---@omw-context global
+---@diagnostic disable: assign-type-mismatch
+---@diagnostic disable: undefined-field
 local core = require("openmw.core")
 local world = require("openmw.world")
 

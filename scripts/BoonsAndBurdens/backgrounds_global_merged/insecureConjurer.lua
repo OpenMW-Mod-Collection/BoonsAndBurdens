@@ -1,3 +1,6 @@
+---@omw-context global
+---@diagnostic disable: assign-type-mismatch
+---@diagnostic disable: undefined-field
 local storage = require("openmw.storage")
 local time = require("openmw_aux.time")
 local async = require("openmw.async")
