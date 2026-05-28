@@ -4,6 +4,8 @@ Expansion pack for Character Traits Framework with many new scripted backgrounds
 
 This is a mishmash of ideas I had while and after working on [Community Traits Ported](https://www.nexusmods.com/morrowind/mods/58704). Some are more serious than others.
 
+Here's the full list of added backgrounds:
+
 <details>
 <summary>Click me!</summary>
 
