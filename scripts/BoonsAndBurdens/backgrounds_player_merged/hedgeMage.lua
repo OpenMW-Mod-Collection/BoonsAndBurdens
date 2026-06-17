@@ -13,17 +13,16 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Hedge Mage",
     description = (
-        "You were born with the magical talents fit of a high court wizard. " ..
-        "Unfortunately for you, you were born far from any court and deprived of a life of privilege. " ..
-        "In the streets, you learned to use your magic to survive, " ..
-        "first through petty theft, then far darker crimes. " ..
-        "As your power grew, so did your ambition, and the line between survival and greed slowly disappeared.\n" ..
+        "You were born with the magical talents fit of a high court wizard, " ..
+        "but unfortunately you were born far away from any court. " ..
+        "You had to learn how to survive by whatever means were available. " ..
+        "Stealth and sorcery became tools no different from a dagger or a lockpick." ..
         "\n" ..
-        "When the law is hunting you, old instincts awaken, and the streets once again become your greatest ally. " ..
-        "But a life spent hunted like an animal leaves scars on the mind. " ..
-        "Constant paranoia and the need to always watch your back slowly wear away your resolve.\n" ..
+        "The more the law hunts you, the more you rely on the skills that kept you alive. " ..
+        "But years spent looking over your shoulder takes its toll, " ..
+        "feeding a paranoia that slowly erodes both your confidence and composture.\n" ..
         "\n" ..
-        "> For every 100 bounty you posess up to a 1000 you get:\n" ..
+        "> For every 100 bounty (up to 1000) you get:\n" ..
         "+0.1x Fortify Magicka\n" ..
         "+1 Illusion, Conjuration, Short Blade and Sneak\n" ..
         "-2 Willpower and Agility"
