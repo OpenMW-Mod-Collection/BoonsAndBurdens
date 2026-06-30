@@ -2,6 +2,7 @@ PLAYER: scripts/BoonsAndBurdens/player.lua
 GLOBAL: scripts/BoonsAndBurdens/global.lua
 
 CUSTOM: scripts/BoonsAndBurdens/backgrounds_custom/oathless.lua
+CUSTOM: scripts/BoonsAndBurdens/backgrounds_custom/unhealing.lua
 
 PLAYER: scripts/BoonsAndBurdens/backgrounds_player/cartographer.lua
 GLOBAL: scripts/BoonsAndBurdens/backgrounds_global/oathless.lua

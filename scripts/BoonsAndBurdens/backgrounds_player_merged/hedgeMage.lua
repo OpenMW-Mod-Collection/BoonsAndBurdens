@@ -4,60 +4,113 @@
 local I = require("openmw.interfaces")
 local self = require("openmw.self")
 local time = require("openmw_aux.time")
-local core = require("openmw.core")
+local storage = require("openmw.storage")
 
+local bgSection = storage.playerSection("BaB_hedgeMage")
+
+local threshold = 100
+local maxBounty = 1000
 local initted = true
+
+local function getBountyLevel()
+    return math.floor(
+        math.min(self.type.getCrimeLevel(self), maxBounty) / threshold
+    )
+end
+
+local function applyBaseStats()
+    local selfSkills = self.type.stats.skills
+    local selfAttrs = self.type.stats.attributes
+
+    selfSkills.destruction(self).modifier = selfSkills.destruction(self).modifier + 10
+    selfSkills.illusion(self).modifier = selfSkills.illusion(self).modifier + 10
+    selfAttrs.intelligence(self).modifier = selfAttrs.intelligence(self).modifier + 10
+
+    selfSkills.shortblade(self).modifier = selfSkills.shortblade(self).modifier - 15
+    selfSkills.sneak(self).modifier = selfSkills.sneak(self).modifier - 15
+end
+
+local function migrateToV2()
+    local selfSkills = self.type.stats.skills
+    local selfAttrs = self.type.stats.attributes
+    local selfSpells = self.type.spells(self)
+    local bountyLevel = getBountyLevel()
+    local oldPositive = {
+        selfSkills.illusion(self),
+        selfSkills.conjuration(self),
+        selfSkills.shortblade(self),
+        selfSkills.sneak(self),
+    }
+    local oldNegative = {
+        selfAttrs.agility(self),
+        selfAttrs.willpower(self),
+    }
+
+    for _, stat in ipairs(oldPositive) do
+        stat.modifier = stat.modifier - 1 * bountyLevel
+    end
+    for _, stat in ipairs(oldNegative) do
+        stat.damage = stat.damage - 2 * bountyLevel
+    end
+    for level = 1, 10 do
+        selfSpells:remove(("bab_hedgemage_%d"):format(level))
+    end
+
+    -- existing characters never got the new flat base stats applied via doOnce
+    applyBaseStats()
+end
+
+local function migrate()
+    if not bgSection:get("migratedToV2") then
+        migrateToV2()
+        bgSection:set("migratedToV2", true)
+    end
+end
 
 I.CharacterTraits.addTrait {
     id = "BaB_hedgeMage",
     type = "background",
     name = "Hedge Mage",
     description = (
-        "You were born with the magical talents fit of a high court wizard. " ..
-        "Unfortunately for you, you were born far from any court and deprived of a life of privilege. " ..
-        "In the streets, you learned to use your magic to survive, " ..
-        "first through petty theft, then far darker crimes. " ..
-        "As your power grew, so did your ambition, and the line between survival and greed slowly disappeared.\n" ..
+        "You were born with the magical talents " ..
+        "fit of a high court wizard, but talent meant little in the slums. " ..
+        "You once dreamed that your gift would one day lift you from poverty. " ..
+        "Instead it drew you to a criminal life, where every spell became another tool to survive.\n" ..
         "\n" ..
-        "When the law is hunting you, old instincts awaken, and the streets once again become your greatest ally. " ..
-        "But a life spent hunted like an animal leaves scars on the mind. " ..
-        "Constant paranoia and the need to always watch your back slowly wear away your resolve.\n" ..
+        "A life of wanted posters with your face weakens your magical gift, " ..
+        "but hones the skills needed to disappear into the shadows.\n" ..
+        "\n" ..
+        "+10 Destruction, Illusion and Intelligence\n" ..
+        "-15 Short Blade and Sneak\n" ..
         "\n" ..
         "> For every 100 bounty you posess up to a 1000 you get:\n" ..
-        "+0.1x Fortify Magicka\n" ..
-        "+1 Illusion, Conjuration, Short Blade and Sneak\n" ..
-        "-2 Willpower and Agility"
+        "-2 Destruction, Illusion and Intelligence\n" ..
+        "+3 Short Blade and Sneak"
     ),
     doOnce = function()
         initted = false
+        applyBaseStats()
     end,
     onLoad = function()
-        local threshold = 100
-        local maxBounty = 1000
+        -- in case you're using an older character
+        migrate()
+
         local selfSkills = self.type.stats.skills
         local selfAttrs = self.type.stats.attributes
-        local selfSpells = self.type.spells(self)
+
         local statModifiers = {
-            { stat = selfSkills.illusion(self),    multiplier = 1 },
-            { stat = selfSkills.conjuration(self), multiplier = 1 },
-            { stat = selfSkills.shortblade(self),  multiplier = 1 },
-            { stat = selfSkills.sneak(self),       multiplier = 1 },
-            { stat = selfAttrs.agility(self),      multiplier = -2 },
-            { stat = selfAttrs.willpower(self),    multiplier = -2 },
+            { stat = selfSkills.shortblade(self),  multiplier = 3 },
+            { stat = selfSkills.sneak(self),       multiplier = 3 },
+            { stat = selfSkills.destruction(self), multiplier = -2 },
+            { stat = selfSkills.illusion(self),    multiplier = -2 },
+            { stat = selfAttrs.intelligence(self), multiplier = -2 },
         }
-        local fortMagickaMult = 1
 
         local targetDamage = {}
         for _, entry in ipairs(statModifiers) do
             if entry.multiplier < 0 then
                 targetDamage[entry.stat] = 0
             end
-        end
-
-        local function getBountyLevel()
-            return math.floor(
-                math.min(self.type.getCrimeLevel(self), maxBounty) / threshold
-            )
         end
 
         local function applyBountyModifiers(direction)
@@ -94,14 +147,6 @@ I.CharacterTraits.addTrait {
             if lastBountyLevel ~= currBountyLevel then
                 applyBountyModifiers(-lastBountyLevel)
                 applyBountyModifiers(currBountyLevel)
-
-                if lastBountyLevel ~= 0 then
-                    selfSpells:remove(("bab_hedgemage_%d"):format(lastBountyLevel))
-                end
-                if currBountyLevel ~= 0 then
-                    selfSpells:add(("bab_hedgemage_%d"):format(currBountyLevel))
-                end
-
                 lastBountyLevel = currBountyLevel
             end
         end, 1)

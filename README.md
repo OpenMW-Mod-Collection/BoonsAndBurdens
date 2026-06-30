@@ -95,7 +95,7 @@ You never had a master to learn from, a forge to work at, or the right tools for
 
 As a young apprentice-clerk, you were paid to transcribe a restricted magical text for a private collector - a document on Atronach theory and the manipulation of the Void. The work left a permanent mark. Your Atronach nature is now deeper than birthright: your soul drinks magic almost greedily, but the Void exacts its cost.
 
-***Requirements: Stunted Magicka ability***
+**_Requirements: Stunted Magicka ability_**
 
 - +15% Spell Absorption
 - +5 Intelligence and Mercantile
@@ -107,15 +107,15 @@ As a young apprentice-clerk, you were paid to transcribe a restricted magical te
 
 ### Hedge Mage
 
-You were born with the magical talents fit of a high court wizard. Unfortunately for you, you were born far from any court and deprived of a life of privilege. In the streets, you learned to use your magic to survive, first through petty theft, then far darker crimes. As your power grew, so did your ambition, and the line between survival and greed slowly disappeared.
+You were born with the magical talents fit of a high court wizard, but talent meant little in the slums. You once dreamed that your gift would one day lift you from poverty. Instead it drew you to a criminal life, where every spell became another tool to survive.
 
-When the law is hunting you, old instincts awaken, and the streets once again become your greatest ally. But a life spent hunted like an animal leaves scars on the mind. Constant paranoia and the need to always watch your back slowly wear away your resolve.
+A life of wanted posters with your face weakens your magical gift, but hones the skills needed to disappear into the shadows
 
-For every 100 bounty (up to 1000) you get:
-
-- +0.1 Fortify Magicka
-- +1 Illusion, Conjuration, Short Blade and Sneak
-- -2 Agility and Willpower
+- +10 Destruction, Illusion and Intelligence
+- -15 Short Blade and Sneak
+- For every 100 bounty up to 1000 you get:
+  - -2 Destruction, Illusion and Intelligence
+  - +3 Short Blade and Sneak
 
 ### Blessed by Molag Bal
 
@@ -126,6 +126,17 @@ In a moment of desperation - or ambition, or weakness - you made an offering at 
 - -20 Endurance
 - -30 Max Health
 - All incoming melee attacks are redirected towards one of your random followers if you have any
+
+### Unhealing
+
+There is no polite way to say it: your body no longer recovers the way a body should. Injuries that should seal themselves simply don't, and the spells that work on everyone else slide off you like water off stone. Whatever happened - and you are not certain you remember it clearly anymore - it changed the rules.
+
+What works is violence. The moment a fight ends in your favour, your wounds close. You stopped questioning it somewhere around the fifth year.
+
+- +10 to all weapon skills
+- -20 Restoration
+- You cannot receive Restore Health effects from any sources
+- You restore %d%% of max health and %d%% of max fatigue by killing enemies with physical weapons
 
 </details>
 
@@ -140,8 +151,9 @@ Load this trait pack **after** the requirements.
 
 Seriously, they will enhance your experience with these backgrounds.
 
-- [Truly Constant Effects](https://www.nexusmods.com/morrowind/mods/57175)
+- [Best Friends Forever](https://www.nexusmods.com/morrowind/mods/59384)
 - [Follower Commands](https://www.nexusmods.com/morrowind/mods/58818)
+- [Truly Constant Effects](https://www.nexusmods.com/morrowind/mods/57175)
 - [Jammings off](https://www.nexusmods.com/morrowind/mods/44523)
 
 ## Credits
@@ -151,4 +163,4 @@ Seriously, they will enhance your experience with these backgrounds.
 **AlandroSul** - Inspiration ([The Wretched and the Weird](https://www.nexusmods.com/morrowind/mods/55570))  
 **dabiggieboss and shazdeh2** - Inspiration ([Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384))  
 **AnonymousAugustus** - Idea for Ward background  
-**moonless and StyX2115** - The Hedge Mage background concept and writing  
+**moonless and StyX2115** - The Hedge Mage background concept and writing

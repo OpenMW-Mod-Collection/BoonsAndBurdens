@@ -3,53 +3,72 @@
 ---@diagnostic disable: undefined-field
 local I = require("openmw.interfaces")
 local self = require("openmw.self")
+local core = require("openmw.core")
 
 I.CharacterTraits.addTrait {
     id = "BaB_bulwark",
     type = "background",
     name = "Bulwark",
     description = (
-        "In a moment of desperation - or ambition, or weakness - " ..
-        "you made an offering at a shrine of Molag Bal. He accepted. " ..
-        "Your magicka swelled and your grip on bound servants sharpened, " ..
-        "but your body grew hollow, the tithe he demanded paid in flesh and endurance. " ..
-        "Those who have walked beside you since bear a burden they never agreed to: " ..
-        "the Prince of Domination has made them your shield, " ..
-        "just as he makes all things serve the strong.\n" ..
+        "Somewhere along the way you stopped thinking of yourself as " ..
+        "someone who fights and started thinking of yourself as someone who stands. " ..
+        "You never had much taste for the killing blow - " ..
+        "your hands were always better suited to the shield, " ..
+        "the ward, the steadying hand on a wounded shoulder. " ..
+        "Those who travel with you have noticed it too: a blow meant for them seems, " ..
+        "more often than not, to find you instead.\n" ..
         "\n" ..
-        "+5 Conjuration and \n" ..
-        "+10 Block\n" ..
-        "+10 All Armor Skills\n" ..
-        "-15 All Weapon Skills and Destruction\n" ..
-        "> You take "
+        "+15 Block, Conjuration, Restoration and Endurance\n" ..
+        "+20 Max Health\n" ..
+        "-10 to all offensive skills\n" ..
+        "> Offensive skills gain only 0.5x experience\n" ..
+        "> Your followers redirect part of the damage to you and take less damage in general " ..
+        "(50% hits the follower, 25% hits you, 25% is negated)"
     ),
     doOnce = function()
+        local block = self.type.stats.skills.block(self)
+        block.base = block.base + 15
         local conjuration = self.type.stats.skills.conjuration(self)
-        conjuration.base = conjuration.base + 10
-        local magicka = self.type.stats.dynamic.magicka(self)
-        magicka.base = magicka.base + 50
-
+        conjuration.base = conjuration.base + 15
+        local restoration = self.type.stats.skills.restoration(self)
+        restoration.base = restoration.base + 15
         local endurance = self.type.stats.attributes.endurance(self)
-        endurance.base = endurance.base - 20
+        endurance.base = endurance.base + 15
+
         local health = self.type.stats.dynamic.health(self)
-        health.base = health.base - 30
+        health.base = health.base + 20
+
+        local offensiveSkills = {
+            self.type.stats.skills.axe(self),
+            self.type.stats.skills.bluntweapon(self),
+            self.type.stats.skills.destruction(self),
+            self.type.stats.skills.handtohand(self),
+            self.type.stats.skills.longblade(self),
+            self.type.stats.skills.marksman(self),
+            self.type.stats.skills.shortblade(self),
+            self.type.stats.skills.spear(self),
+        }
+        for _, skill in ipairs(offensiveSkills) do
+            skill.base = skill.base - 10
+        end
     end,
     onLoad = function()
-        I.Combat.addOnHitHandler(function(attack)
-            if not attack or not attack.successful then return end
+        local offensiveSkills = {
+            axe = true,
+            bluntweapon = true,
+            destruction = true,
+            handtohand = true,
+            longblade = true,
+            marksman = true,
+            shortblade = true,
+            spear = true,
+        }
 
-            local followers = I.FollowerDetectionUtil.getFollowerList()
-            local indexedFollowers = {}
-            for _, state in pairs(followers) do
-                if state.leader.id == self.id or state.superLeader.id == self.id then
-                    indexedFollowers[#indexedFollowers + 1] = state.actor
-                end
-            end
-            if #indexedFollowers == 0 then return end
-
-            local newAttackTarget = indexedFollowers[math.random(#indexedFollowers)]
-            newAttackTarget:sendEvent("Hit", attack)
-            return false
+        I.SkillProgression.addSkillUsedHandler(function(skillId, params)
+            if not offensiveSkills[skillId] then return end
+            params.skillGain = params.skillGain * 0.5
         end)
+
+        core.sendGlobalEvent("BoonsAndBurdens_registerBulwark", self)
     end
 }
