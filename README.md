@@ -163,4 +163,5 @@ Seriously, they will enhance your experience with these backgrounds.
 **AlandroSul** - Inspiration ([The Wretched and the Weird](https://www.nexusmods.com/morrowind/mods/55570))  
 **dabiggieboss and shazdeh2** - Inspiration ([Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384))  
 **AnonymousAugustus** - Idea for Ward background  
-**moonless and StyX2115** - The Hedge Mage background concept and writing
+**moonless and StyX2115** - The Hedge Mage background concept and writing  
+**Llysanthil** - Idea for Unhealing background  
