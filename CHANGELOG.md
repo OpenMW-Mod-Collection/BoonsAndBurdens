@@ -3,8 +3,9 @@
 ## 1.1
 
 - Reworked Hedge Mage to make him more interesting
-- Added Bulwark
+- Added Bulwark (fr this time)
 - Added Unhealing
+- Added Deserter
 
 ## 1.0.1
 

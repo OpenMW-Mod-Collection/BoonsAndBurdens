@@ -136,7 +136,45 @@ What works is violence. The moment a fight ends in your favour, your wounds clos
 - +10 to all weapon skills
 - -20 Restoration
 - You cannot receive Restore Health effects from any sources
-- You restore %d%% of max health and %d%% of max fatigue by killing enemies with physical weapons
+- You restore 15% of max health and 15% of max fatigue by killing enemies with physical weapons
+
+### Bulwark
+
+Somewhere along the way you stopped thinking of yourself as someone who fights and started thinking of yourself as someone who stands. You never had much taste for the killing blow - your hands were always better suited to the shield, the ward, the steadying hand on a wounded shoulder. Those who travel with you have noticed it too: a blow meant for them seems, more often than not, to find you instead.
+
+- +15 Block, Conjuration, Restoration and Endurance
+- +20 Max Health
+- -10 to all offensive skills
+- Offensive skills gain only half as much experience
+- Your followers redirect part of the physical damage to you and take less damage in general (50% hits the follower, 25% hits you, 25% is negated)
+
+### Deserter
+
+You wore the uniform once. The Legion trained you, hardened you, made you into exactly the soldier they needed - discipline in your spine, strength in your frame, the bearing of someone built for war. And then, for reasons only you carry the weight of, you ran. But desertion isn't easily forgiven. Worse still, the Empire hasn't forgotten your face.
+
+- +10 to all skills and attributes favored by the Legion
+- +10 Sneak
+- -20 disposition with Imperial Cult and Fighters Guild members
+- +900 bounty
+- Walking close to the Legion members blows your cover, granting instant arrest warrant with additional 900 bounty
+
+### Hollow-Blooded
+
+You were born weak. Not sickly, not cursed - simply lacking the vigor that comes naturally to most. Muscle sits on your frame but answers sluggishly; your body tires long before your will does. For years you had no name for it, only the frustration of falling short no matter how you trained.
+
+It was a sage, met by chance or fate, who first looked at you and knew. They spoke of an old affliction, rare enough that most healers mistake it for simple frailty - and rarer still, a way to counter it. Not all Daedra, they said, but the exceptional among them: beings whose power sets them apart from the common rabble of Oblivion. Something in their nature, spent at the moment of death, could answer what your own body lacks. Whether the sage spoke truth or superstition, you no longer have the luxury of doubt.
+
+- -15 Strength and Endurance
+- Killing a unique named Daedra grants you +2 Strength and Endurance
+
+#### Supported mods
+
+The default settings are intended for single province playthroughs, so if you plan on going on a world crusade tour, you might want to lower the kill bonus from +2 to +1.
+
+- [Tamriel Rebuilt](https://www.nexusmods.com/morrowind/mods/42145)
+- [Project Cyrodiil](https://www.nexusmods.com/morrowind/mods/44922)
+- [Skyrim: Home of the Nords](https://www.nexusmods.com/morrowind/mods/44921)
+- [Doors of Oblivion](https://www.nexusmods.com/morrowind/mods/44398)
 
 </details>
 
@@ -162,6 +200,6 @@ Seriously, they will enhance your experience with these backgrounds.
 **JosephMcKean** - Inspiration ([Background - The Vampire](https://www.nexusmods.com/morrowind/mods/52978))  
 **AlandroSul** - Inspiration ([The Wretched and the Weird](https://www.nexusmods.com/morrowind/mods/55570))  
 **dabiggieboss and shazdeh2** - Inspiration ([Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384))  
-**AnonymousAugustus** - Idea for Ward background  
+**AnonymousAugustus** - Idea for the Ward background  
 **moonless and StyX2115** - The Hedge Mage background concept and writing  
-**Llysanthil** - Idea for Unhealing background  
+**Llysanthil** - Idea for the Unhealing background  

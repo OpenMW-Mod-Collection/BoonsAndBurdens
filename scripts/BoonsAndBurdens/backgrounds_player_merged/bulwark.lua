@@ -21,8 +21,8 @@ I.CharacterTraits.addTrait {
         "+15 Block, Conjuration, Restoration and Endurance\n" ..
         "+20 Max Health\n" ..
         "-10 to all offensive skills\n" ..
-        "> Offensive skills gain only 0.5x experience\n" ..
-        "> Your followers redirect part of the damage to you and take less damage in general " ..
+        "> Offensive skills gain only half as much experience\n" ..
+        "> Your followers redirect part of the physical damage to you and take less damage in general " ..
         "(50% hits the follower, 25% hits you, 25% is negated)"
     ),
     doOnce = function()
@@ -37,6 +37,7 @@ I.CharacterTraits.addTrait {
 
         local health = self.type.stats.dynamic.health(self)
         health.base = health.base + 20
+        health.current = health.current + 20
 
         local offensiveSkills = {
             self.type.stats.skills.axe(self),
