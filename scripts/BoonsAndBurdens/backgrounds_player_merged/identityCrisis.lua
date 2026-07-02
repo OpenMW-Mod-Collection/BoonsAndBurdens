@@ -11,7 +11,7 @@ I.CharacterTraits.addTrait {
     type = "background",
     name = "Identity Crisis",
     description = (
-        "vSomething happened - you have never been entirely clear on what. " ..
+        "Something happened - you have never been entirely clear on what. " ..
         "The person you were before it and the person you became after share " ..
         "the same memories, the same face, the same instincts. " ..
         "Just not, apparently, the same arrangement. You know exactly who you are. " ..
