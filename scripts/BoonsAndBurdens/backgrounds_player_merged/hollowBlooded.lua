@@ -3,6 +3,14 @@
 local I = require("openmw.interfaces")
 local self = require("openmw.self")
 local core = require("openmw.core")
+local storage = require("openmw.storage")
+local ambient = require("openmw.ambient")
+local types   = require("openmw.types")
+
+local messages = require("scripts.BoonsAndBurdens.utils.messages")
+
+local l10n = core.l10n("BoonsAndBurdens")
+local settings = storage.globalSection("SettingsBoonsAndBurdens_hollowBlooded")
 
 I.CharacterTraits.addTrait {
     id = "BaB_hollowBlooded",
@@ -21,7 +29,7 @@ I.CharacterTraits.addTrait {
         "Whether the sage spoke truth or superstition, you no longer have the luxury of doubt.\n" ..
         "\n" ..
         "-15 Strength and Endurance\n" ..
-        "> Killing a unique named Daedra grants you +2 Strength and Endurance"
+        "> Killing a unique named Daedra grants you +" .. tostring(settings:get("statBonus")) .. " Strength and Endurance"
     ),
     doOnce = function()
         local strength = self.type.stats.attributes.strength(self)
@@ -36,11 +44,23 @@ I.CharacterTraits.addTrait {
 
 return {
     eventHandlers = {
-        BoonsAndBurdens_uniqueDaedraSlain = function()
-            
-        end,
-        BoonsAndBurdens_daedricPrinceSlain = function()
-            
+        BoonsAndBurdens_uniqueDaedraSlain = function(daedra)
+            local strength = self.type.stats.attributes.strength(self)
+            strength.base = strength.base + settings:get("statBonus")
+            local endurance = self.type.stats.attributes.endurance(self)
+            endurance.base = endurance.base + settings:get("statBonus")
+
+            -- regen HP for vibes
+            local health = self.type.stats.dynamic.health(self)
+            health.current = math.max(health.current, health.base)
+
+            ambient.playSound("restoration hit")
+            local resotreHealth = core.magic.effects.records["restorehealth"]
+            self:sendEvent("AddVfx", {
+                model = types.Static.records[resotreHealth.hitStatic].model
+            })
+            local daedraName = daedra.type.records[daedra.recordId].name
+            messages.show(l10n, self, "msg_uniqueDaedraDead", { daedraName = daedraName })
         end,
     }
 }

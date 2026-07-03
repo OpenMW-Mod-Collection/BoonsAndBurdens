@@ -1,12 +1,12 @@
 ---@omw-context local | global
 local vfs = require("openmw.vfs")
 
-local U = {}
+local M = {}
 
 --- Merges handler tables from multiple Lua files, supporting multiple handler types.
 --- @param folderPath string
 --- @return table<string, table<string, function>>
-U.mergeAllHandlers = function(folderPath)
+M.mergeAllHandlers = function(folderPath)
     local merged = {}
 
     -- Temporary storage: all[handlerType][handlerName] = {func1, func2, ...}
@@ -55,4 +55,4 @@ U.mergeAllHandlers = function(folderPath)
     return merged
 end
 
-return U
+return M

@@ -5,7 +5,7 @@ local I = require("openmw.interfaces")
 local self = require("openmw.self")
 local core = require("openmw.core")
 
-local bgPicked = true
+local bgPicked = false
 
 I.CharacterTraits.addTrait {
     id = "BaB_deserter",

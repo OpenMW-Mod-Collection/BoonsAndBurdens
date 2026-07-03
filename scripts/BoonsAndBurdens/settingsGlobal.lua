@@ -19,3 +19,21 @@ I.Settings.registerGroup {
         },
     }
 }
+
+I.Settings.registerGroup {
+    key = 'SettingsBoonsAndBurdens_hollowBlooded',
+    page = 'BoonsAndBurdens',
+    l10n = 'BoonsAndBurdens',
+    name = 'hollowBlooded_groupName',
+    permanentStorage = true,
+    order = 1,
+    settings = {
+        {
+            key = 'statBonus',
+            name = 'statBonus_name',
+            description = 'statBonus_desc',
+            renderer = 'number',
+            default = 2,
+        },
+    }
+}

@@ -6,6 +6,7 @@
 - Added Bulwark (fr this time)
 - Added Unhealing
 - Added Deserter
+- Added Hollow-Blooded
 
 ## 1.0.1
 

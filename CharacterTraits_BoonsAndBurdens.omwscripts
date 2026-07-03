@@ -1,13 +1,14 @@
+MENU: scripts/BoonsAndBurdens/settingsMenu.lua
+GLOBAL: scripts/BoonsAndBurdens/settingsGlobal.lua
+
 PLAYER: scripts/BoonsAndBurdens/player.lua
 GLOBAL: scripts/BoonsAndBurdens/global.lua
 
 CUSTOM: scripts/BoonsAndBurdens/backgrounds_custom/oathless.lua
 CUSTOM: scripts/BoonsAndBurdens/backgrounds_custom/unhealing.lua
 CUSTOM: scripts/BoonsAndBurdens/backgrounds_custom/bulwark.lua
+CUSTOM: scripts/BoonsAndBurdens/backgrounds_custom/hollowBlooded.lua
 
 PLAYER: scripts/BoonsAndBurdens/backgrounds_player/cartographer.lua
 GLOBAL: scripts/BoonsAndBurdens/backgrounds_global/oathless.lua
 GLOBAL: scripts/BoonsAndBurdens/backgrounds_global/deserter.lua
-
-MENU: scripts/BoonsAndBurdens/settingsMenu.lua
-GLOBAL: scripts/BoonsAndBurdens/settingsGlobal.lua

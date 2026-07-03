@@ -4,9 +4,11 @@
 local storage = require("openmw.storage")
 local time = require("openmw_aux.time")
 local async = require("openmw.async")
+local core = require("openmw.core")
 
 local messages = require("scripts.BoonsAndBurdens.utils.messages")
 
+local l10n = core.l10n("BoonsAndBurdens")
 local settings = storage.globalSection("SettingsBoonsAndBurdens_insecureConjurer")
 local registeredPlayers = {}
 local ignoredSummons = {}
@@ -14,7 +16,7 @@ local ignoredSummons = {}
 local delayedAttack = async:registerTimerCallback(
     "delayedAttack",
     function(data)
-        messages.show(data.leader, "msg_summonTurned",
+        messages.show(l10n, data.leader, "msg_summonTurned",
             { summon_name = data.actor.type.records[data.actor.recordId].name }
         )
         data.actor:sendEvent(

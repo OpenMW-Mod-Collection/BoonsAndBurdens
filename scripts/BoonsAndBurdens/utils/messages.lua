@@ -1,12 +1,8 @@
 ---@diagnostic disable: assign-type-mismatch
 ---@omw-context local | global
-local core = require("openmw.core")
-
-local l10n = core.l10n("BoonsAndBurdens")
-
 local messages = {}
 
-local function pickRandomMessage(messageKey, context)
+local function pickRandomMessage(l10n, messageKey, context)
     local messageOptions = {}
     local i = 1
     while true do
@@ -22,8 +18,8 @@ local function pickRandomMessage(messageKey, context)
     return messageOptions[math.random(#messageOptions)]
 end
 
-messages.show = function(player, messageKey, context)
-    local msg = pickRandomMessage(messageKey, context)
+messages.show = function(l10n, player, messageKey, context)
+    local msg = pickRandomMessage(l10n, messageKey, context)
     player:sendEvent("ShowMessage", { message = msg })
 end
 

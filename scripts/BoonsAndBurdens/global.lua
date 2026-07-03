@@ -1,6 +1,6 @@
 ---@omw-context global
-local U = require("scripts.BoonsAndBurdens.utils.utils")
+local M = require("scripts.BoonsAndBurdens.utils.scriptMerger")
 
 local folderPath = "scripts/BoonsAndBurdens/backgrounds_global_merged/"
 
-return U.mergeAllHandlers(folderPath)
+return M.mergeAllHandlers(folderPath)

@@ -4,9 +4,25 @@ page_description: Settings for Boons and Burdens backgrounds.
 insecureConjurer_groupName: Insecure Conjurer
 disobeyChance_name: Disobey Chance (%)
 
+hollowBlooded_groupName: Hollow-Blooded
+statBonus_name: Stat Bonus for Killing Unique Daedra
+statBonus_desc: |
+  How much trength and Endurance you will get for a kill.
+
+  Consider lowering it if you plan on going cross-continental holy crusade, as just the vanilla has ~30 of them already.
+
+  Not retroactive.
+
 msg_summonTurned_1: Your {summon_name} senses your doubt. It has decided to act on it.
 msg_summonTurned_2: "{summon_name} slips your grasp. It does not look pleased."
 msg_summonTurned_3: You feel your hold on {summon_name} fracture. It turns to face you.
 msg_summonTurned_4: "{summon_name} was never truly yours to command."
 msg_summonTurned_5: Your grip on {summon_name} falters. The creature notices.
 msg_summonTurned_6: "{summon_name} grows tired of your hesitation."
+
+msg_uniqueDaedraDead_1: As {daedraName} falls, something in you answers. Strength you never had floods in to fill the hollow.
+msg_uniqueDaedraDead_2: Something ancient in {daedraName} passes into you as it dies. Your limbs feel less like borrowed things.
+msg_uniqueDaedraDead_3: The death of {daedraName} leaves a stillness in the air - and a surge in your blood that wasn't there a moment ago.
+msg_uniqueDaedraDead_4: "{daedraName} screams once. Then silence - and heat in your veins."
+msg_uniqueDaedraDead_5: You feel {daedraName} die. It feels like waking up.
+msg_uniqueDaedraDead_6: That's one less thing standing between you and yourself.

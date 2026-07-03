@@ -169,6 +169,8 @@ It was a sage, met by chance or fate, who first looked at you and knew. They spo
 
 #### Supported mods
 
+Filled them to the best of my abilities, but I'm open to changes.
+
 The default settings are intended for single province playthroughs, so if you plan on going on a world crusade tour, you might want to lower the kill bonus from +2 to +1.
 
 - [Tamriel Rebuilt](https://www.nexusmods.com/morrowind/mods/42145)

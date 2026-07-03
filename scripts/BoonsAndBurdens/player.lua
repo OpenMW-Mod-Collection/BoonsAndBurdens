@@ -1,7 +1,7 @@
 ---@omw-context player
 local I = require("openmw.interfaces")
 
-local U = require("scripts.BoonsAndBurdens.utils.utils")
+local M = require("scripts.BoonsAndBurdens.utils.scriptMerger")
 local deps = require("scripts.BoonsAndBurdens.utils.dependencies")
 
 deps.checkAll("Boons and Burdens", {
@@ -18,4 +18,4 @@ deps.checkAll("Boons and Burdens", {
 
 local folderPath = "scripts/BoonsAndBurdens/backgrounds_player_merged/"
 
-return U.mergeAllHandlers(folderPath)
+return M.mergeAllHandlers(folderPath)
