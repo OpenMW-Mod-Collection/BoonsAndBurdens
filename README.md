@@ -109,7 +109,7 @@ As a young apprentice-clerk, you were paid to transcribe a restricted magical te
 
 You were born with the magical talents fit of a high court wizard, but talent meant little in the slums. You once dreamed that your gift would one day lift you from poverty. Instead it drew you to a criminal life, where every spell became another tool to survive.
 
-A life of wanted posters with your face weakens your magical gift, but hones the skills needed to disappear into the shadows
+A life of wanted posters with your face weakens your magical gift, but hones the skills needed to disappear into the shadows.
 
 - +10 Destruction, Illusion and Intelligence
 - -15 Short Blade and Sneak
