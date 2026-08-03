@@ -1,12 +1,13 @@
 # Boons and Burdens (OpenMW)
 
-## 1.1
+## 2.0
 
 - Reworked Hedge Mage to make him more interesting
 - Added Bulwark (fr this time)
 - Added Unhealing
 - Added Deserter
 - Added Hollow-Blooded
+- Added Loose Lips
 
 ## 1.0.1
 

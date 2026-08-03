@@ -5,7 +5,7 @@ local self = require("openmw.self")
 local core = require("openmw.core")
 local storage = require("openmw.storage")
 local ambient = require("openmw.ambient")
-local types   = require("openmw.types")
+local types = require("openmw.types")
 
 local messages = require("scripts.BoonsAndBurdens.utils.messages")
 
