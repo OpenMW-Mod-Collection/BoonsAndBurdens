@@ -167,16 +167,6 @@ It was a sage, met by chance or fate, who first looked at you and knew. They spo
 - -15 Strength and Endurance
 - Killing a unique named Daedra grants you +2 Strength and Endurance
 
-### Loose Lips
-
-You were three drinks in, maybe four, and the name just came out. Not loudly. Not carelessly. Just - out, into the wrong air, at the wrong table, in a tavern you'd been told a dozen times to avoid. By morning the Tong knew. By the end of the week, so did you. You were expelled rather than sanctioned, which you have since decided to interpret generously.
-
-- +5 to all Morag Tong faction skills
-- +5 Personality
-- -15 Speechcraft
-- All Morag Tong members are hostile on sight
-- Hlaalu members have reduced disposition towards you
-
 #### Supported mods
 
 Filled them to the best of my abilities, but I'm open to changes.
@@ -187,6 +177,16 @@ The default settings are intended for single province playthroughs, so if you pl
 - [Project Cyrodiil](https://www.nexusmods.com/morrowind/mods/44922)
 - [Skyrim: Home of the Nords](https://www.nexusmods.com/morrowind/mods/44921)
 - [Doors of Oblivion](https://www.nexusmods.com/morrowind/mods/44398)
+
+### Loose Lips
+
+You were three drinks in, maybe four, and the name just came out. Not loudly. Not carelessly. Just - out, into the wrong air, at the wrong table, in a tavern you'd been told a dozen times to avoid. By morning the Tong knew. By the end of the week, so did you. You were expelled rather than sanctioned, which you have since decided to interpret generously.
+
+- +5 to all Morag Tong faction skills
+- +5 Personality
+- -15 Speechcraft
+- All Morag Tong members are hostile on sight
+- Hlaalu members have reduced disposition towards you
 
 </details>
 

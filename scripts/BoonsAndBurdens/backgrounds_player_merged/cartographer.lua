@@ -27,7 +27,7 @@ I.CharacterTraits.addTrait {
         "+10 Athletics\n" ..
         "-10 Strength\n" ..
         "+50% Common and Blight Disease Weakness\n" ..
-        "> For every " .. tostring(cellsPerBonus) .. " visited unqiue locations you get +1 to intelligence"
+        "> For every " .. tostring(cellsPerBonus) .. " visited unqiue locations you get +1 to Intelligence"
     ),
     doOnce = function()
         local str = self.type.stats.attributes.strength(self)
