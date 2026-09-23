@@ -186,7 +186,7 @@ You were three drinks in, maybe four, and the name just came out. Not loudly. No
 - +5 Personality
 - -15 Speechcraft
 - All Morag Tong members are hostile on sight
-- Hlaalu members have reduced disposition towards you
+- -20 disposition with Great House Hlaalu members
 
 </details>
 

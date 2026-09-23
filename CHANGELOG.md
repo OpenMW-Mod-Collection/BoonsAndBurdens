@@ -5,6 +5,7 @@
 - Improved script merger
 - Reduced the amount of individual scripts
 - Fixed Vortex mod manager incompatibility (please guys stop using it, switch at least to MO2)
+- Made Loose Lips description a little more specific regarding Hlaalu disposition penalty
 
 ## 2.0
 

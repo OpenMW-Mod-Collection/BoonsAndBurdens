@@ -18,8 +18,8 @@ I.CharacterTraits.addTrait {
         "+5 to all Morag Tong faction skills\n" ..
         "+5 Personality\n" ..
         "-15 Speechcraft\n" ..
-        "> All Morag Tong members are hostile on sight\n" ..
-        "> Hlaalu members have reduced disposition towards you"
+        "-20 disposition with Great House Hlaalu members\n" ..
+        "All Morag Tong members are hostile on sight"
     ),
     doOnce = function()
         local moragTong = core.factions.records["morag tong"]
