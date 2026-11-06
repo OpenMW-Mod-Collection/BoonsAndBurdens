@@ -4,6 +4,7 @@
 local I = require("openmw.interfaces")
 local self = require("openmw.self")
 local core = require("openmw.core")
+local types= require("openmw.types")
 
 local bgPicked = false
 
@@ -53,7 +54,11 @@ I.CharacterTraits.addTrait {
 }
 
 local function dialogueResponse(res)
-    if not bgPicked or res.actor.type.getFactionRank(res.actor, "imperial legion") == 0 then
+    if not bgPicked
+        or not types.NPC.objectIsInstance(res.actor)
+        or types.Player.objectIsInstance(res.actor)
+        or types.NPC.getFactionRank(res.actor, "imperial legion") == 0
+    then
         return
     end
 

@@ -1,5 +1,9 @@
 # Boons and Burdens (OpenMW)
 
+## 3.0.1
+
+- Deserter: fixed "exposed" status triggering on player voice lines
+
 ## 3.0
 
 - Improved script merger
