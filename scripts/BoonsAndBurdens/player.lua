@@ -1,18 +1,20 @@
+---@diagnostic disable: undefined-field
 ---@omw-context player
 local I = require("openmw.interfaces")
 
 local M = require("scripts.BoonsAndBurdens.utils.scriptMerger")
-local deps = require("scripts.BoonsAndBurdens.utils.dependencies")
+local deps = require("scripts.BoonsAndBurdens.utils.dependencyChecker")
 
-deps.checkAll("Boons and Burdens", {
+deps.checkAll("Boons and Burdens", "Boons and Burdens", nil, {
     {
         plugin = "CharacterTraitsFramework.omwscripts",
-        ---@diagnostic disable-next-line: undefined-field
         interface = I.CharacterTraits,
     },
     {
         plugin = "FollowerDetectionUtil.omwscripts",
-        interface = true,
+        interface = I.FollowerDetectionUtil,
+        minVersion = 6,
+        curVersion = I.FollowerDetectionUtil.version,
     }
 })
 

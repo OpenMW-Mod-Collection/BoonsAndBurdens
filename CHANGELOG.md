@@ -1,5 +1,12 @@
 # Boons and Burdens (OpenMW)
 
+## 3.1
+
+- Added Method Player TODO: test it
+- Updated the dependency checker script
+- Removed all GOTO statements
+- Mod now requires Follower Detection Util version 3.0 or newer
+
 ## 3.0.1
 
 - Deserter: fixed "exposed" status triggering on player voice lines

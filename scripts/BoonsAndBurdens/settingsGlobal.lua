@@ -1,6 +1,7 @@
 ---@omw-context global
 ---@diagnostic disable: missing-fields
 local I = require('openmw.interfaces')
+local time = require('openmw_aux.time')
 
 I.Settings.registerGroup {
     key = 'SettingsBoonsAndBurdens_insecureConjurer',
@@ -34,6 +35,27 @@ I.Settings.registerGroup {
             description = 'statBonus_desc',
             renderer = 'number',
             default = 2,
+        },
+    }
+}
+
+I.Settings.registerGroup {
+    key = 'SettingsBoonsAndBurdens_methodPlayer',
+    page = 'BoonsAndBurdens',
+    l10n = 'BoonsAndBurdens',
+    name = 'methodPlayer_groupName',
+    permanentStorage = true,
+    order = 3,
+    settings = {
+        {
+            key = 'rolePeriod',
+            name = 'rolePeriod_name',
+            description = 'rolePeriod_desc',
+            renderer = 'time_V1',
+            default = 3 * time.day,
+            argument = {
+                days = true,
+            },
         },
     }
 }

@@ -72,7 +72,7 @@ The talent was there from the start - tutors said as much, and for once they wer
 - -5 Luck
 - Your summons have a chance to turn against you.
 
-> Note: Disobedience chance can be changed in settings.
+> Note: Disobedience chance can be changed in the settings.
 
 ### Oathless
 
@@ -167,6 +167,8 @@ It was a sage, met by chance or fate, who first looked at you and knew. They spo
 - -15 Strength and Endurance
 - Killing a unique named Daedra grants you +2 Strength and Endurance
 
+> Note: Stat bonus can be changed in settings.
+
 #### Supported mods
 
 Filled them to the best of my abilities, but I'm open to changes.
@@ -188,6 +190,18 @@ You were three drinks in, maybe four, and the name just came out. Not loudly. No
 - All Morag Tong members are hostile on sight
 - -20 disposition with Great House Hlaalu members
 
+### Method Player
+
+You were never trained in anything. You were hired to be whoever the play needed that week: the duelist, the physician, the thief, the king. You learned your lines, studied your part and became it, because audiences can tell when you're faking. When the week ended you shed the role, and the skills went with it. Now there are no plays, and you still haven't stopped. Every few days you wake up as someone else, with their hands and their habits, and without whatever the last one knew.
+
+- +5 Intelligence and Personality
+- Every 3 game days, the role changes:
+  - Two random major skills: one gets +20 and one gets -20
+  - Four random minor skills: two get +20 and two get -20
+  - Three random miscellaneous skills get +30
+
+> Note: Role change period can be changed in the settings.
+
 </details>
 
 ## Requirements
@@ -195,7 +209,7 @@ You were three drinks in, maybe four, and the name just came out. Not loudly. No
 Load this trait pack **after** the requirements.
 
 - [Character Traits Framework](https://www.nexusmods.com/morrowind/mods/58703)
-- [Follower Detection Util](https://www.nexusmods.com/morrowind/mods/58053)
+- [Follower Detection Util](https://www.nexusmods.com/morrowind/mods/58053) version 3.0 or newer
 
 ## Recommended Mods
 
@@ -214,4 +228,4 @@ Seriously, they will enhance your experience with these backgrounds.
 **dabiggieboss and shazdeh2** - Inspiration ([Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384))  
 **AnonymousAugustus** - Idea for the Ward background  
 **moonless and StyX2115** - The Hedge Mage background concept and writing  
-**Llysanthil** - Idea for the Unhealing background  
+**Llysanthil** - Idea for the Unhealing background

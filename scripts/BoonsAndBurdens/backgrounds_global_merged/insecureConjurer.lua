@@ -5,6 +5,7 @@ local storage = require("openmw.storage")
 local time = require("openmw_aux.time")
 local async = require("openmw.async")
 local core = require("openmw.core")
+local I = require("openmw.interfaces")
 
 local messages = require("scripts.BoonsAndBurdens.utils.messages")
 
@@ -29,28 +30,22 @@ local delayedAttack = async:registerTimerCallback(
 local function followerListUpdated(data)
     if not next(registeredPlayers) then return end
     for _, fState in pairs(data.followers) do
-        if not fState.followsPlayer
-            or not fState.leader
-            or not registeredPlayers[fState.leader.id]
-            or ignoredSummons[fState.actor.id]
+        if fState.followsPlayer
+            and fState.leader
+            and registeredPlayers[fState.leader.id]
+            and not ignoredSummons[fState.actor.id]
         then
-            goto continue
+            if I.FollowerDetectionUtil.isSummon(fState.actor.recordId) then
+                if math.random(100) < settings:get("disobeyChance") then
+                    fState.actor:sendEvent("RemoveAIPackages", "Follow")
+                    time.newSimulationTimer(1, delayedAttack,
+                        { actor = fState.actor, leader = fState.leader }
+                    )
+                else
+                    ignoredSummons[fState.actor.id] = true
+                end
+            end
         end
-
-        local isSummon = string.find(fState.actor.recordId, "_summon$")
-            or fState.actor.recordId == "bonewalker_greater_summ"
-        if not isSummon then goto continue end
-
-        if math.random(100) < settings:get("disobeyChance") then
-            fState.actor:sendEvent("RemoveAIPackages", "Follow")
-            time.newSimulationTimer(1, delayedAttack,
-                { actor = fState.actor, leader = fState.leader }
-            )
-        else
-            ignoredSummons[fState.actor.id] = true
-        end
-
-        ::continue::
     end
 end
 

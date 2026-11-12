@@ -13,6 +13,13 @@ statBonus_desc: |
 
   Not retroactive.
 
+methodPlayer_groupName: Method Player
+rolePeriod_name: Role Change Period
+rolePeriod_desc: |
+  How long each role lasts, in game time.
+
+  Changes take effect when the next role timer is scheduled.
+
 msg_summonTurned_1: Your {summon_name} senses your doubt. It has decided to act on it.
 msg_summonTurned_2: "{summon_name} slips your grasp. It does not look pleased."
 msg_summonTurned_3: You feel your hold on {summon_name} fracture. It turns to face you.
@@ -26,3 +33,31 @@ msg_uniqueDaedraDead_3: The death of {daedraName} leaves a stillness in the air 
 msg_uniqueDaedraDead_4: "{daedraName} screams once. Then silence - and heat in your veins."
 msg_uniqueDaedraDead_5: You feel {daedraName} die. It feels like waking up.
 msg_uniqueDaedraDead_6: That's one less thing standing between you and yourself.
+
+msg_methodActor_enchant: "Now you are: The Court Wizard. Your hands remember how to make an object remember things."
+msg_methodActor_armorer: "Now you are: The Village Smith. The hammer is heavy and perfectly balanced. You know why."
+msg_methodActor_mediumarmor: "Now you are: The Sergeant. You carry yourself like a man who has stopped being afraid of the next hit."
+msg_methodActor_heavyarmor: "Now you are: The Iron Knight. Nobody told you the costume was real steel. It is, and you've never been surer of anything."
+msg_methodActor_bluntweapon: "Now you are: The Brute. You've never needed a plan, and you aren't about to start."
+msg_methodActor_longblade: "Now you are: The Duelist. The audience is leaning forward. Your sword hand knows why."
+msg_methodActor_axe: "Now you are: The Wood-Cutter. The play calls for an axe and the stage manager has not checked whether it's a prop."
+msg_methodActor_spear: "Now you are: The Sentry. You know the exact length of your reach and exactly when to hold it."
+msg_methodActor_athletics: "Now you are: The Messenger. Your legs forgot the script and decided the show will go on."
+msg_methodActor_alchemy: "Now you are: The Apothecary. You mix a little of this and a little of that, and you know for certain what will happen."
+msg_methodActor_unarmored: "Now you are: The Beggar King. You've worn rags so long that you move better in them than anyone does in plate."
+msg_methodActor_acrobatics: "Now you are: The Tumbler. Gravity is a suggestion, and you've decided not to take it."
+msg_methodActor_conjuration: "Now you are: The Necromancer. You say the words with a flourish. Something on the other side answers, a little too eagerly."
+msg_methodActor_shortblade: "Now you are: The Cutpurse. A good blade is a quiet blade. You've never made a sound with yours."
+msg_methodActor_marksman: "Now you are: The Archer. You can hit the apple. You were never meant to hit the apple, but you could."
+msg_methodActor_security: "Now you are: The Locksmith. Every lock is a sentence. You can finish all of them."
+msg_methodActor_speechcraft: "Now you are: The Orator. The crowd is yours, and you hold it for as long as you speak."
+msg_methodActor_mysticism: "Now you are: The Fortune Teller. You see something in the cards. You don't mention that you aren't sure it was there."
+msg_methodActor_handtohand: "Now you are: The Brawler. Stage combat taught you how to fall. Tavern fights taught you how to throw."
+msg_methodActor_mercantile: "Now you are: The Merchant. You know what everything costs, and you know what people will pay for it."
+msg_methodActor_restoration: "Now you are: The Physician. You were told to look like you're healing. Somewhere in the act, you actually do."
+msg_methodActor_lightarmor: "Now you are: The Highwayman. You move fast and light, and you're ready for anything that follows."
+msg_methodActor_sneak: "Now you are: The Spy. You were told to disappear into the background. You've never been so good at it."
+msg_methodActor_destruction: "Now you are: The Pyromancer. Fire is a prop. Today it isn't."
+msg_methodActor_alteration: "Now you are: The Fairy Queen. You float over the crowd. You were told there was a wire. You've stopped checking."
+msg_methodActor_illusion: "Now you are: The Mesmerist. You look at one person, and everyone else looks at them too."
+msg_methodActor_block: "Now you are: The Shield-Bearer. You stand in the doorway and nothing gets past. You don't remember volunteering for this."

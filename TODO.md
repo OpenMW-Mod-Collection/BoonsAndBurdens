@@ -15,19 +15,6 @@ The troupe never paid in coin. They paid in moon sugar, because it was cheaper a
     - Hollow: +15 Willpower and Intelligence, +10 Mysticism, -15 Personality and Agility
 - Eating moon sugar forces a Manic spell for the rest of the day, and the swap schedule then shifts accordingly.
 
-## Method Player
-
-You were never trained in anything. You were hired to be whoever the play needed that week: the duelist, the physician, the thief, the king. You learned your lines, studied your part and became it, because audiences can tell when you’re faking. When the week ended you shed the role, and the skills went with it. Now there are no plays, and you still haven’t stopped. Every few days you wake up as someone else, with their hands and their habits, and without whatever the last one knew.
-
-- +5 Intelligence and Personality
-- +20 Bardcraft (if installed)
-- Every 3 game days, “the role changes”:
-    - Two random major skills: one gets +20 and one gets -20
-    - Four random minor skills: two get +20 and two get -20
-    - Three random misc skills get +30
-
-> A message announces the new role, named after the +20 major skill
-
 ## Keystone
 
 When the magister built his summoning circle, he needed something to hold the bindings in place. He used you. Every creature he ever called passed through you first, and over the years you learned to let it, to be the thing the magic rests on while it does its work. It left you thin. Magic goes through you easily now, and so do blades. Whatever you are wearing, you can lend it to the things you call. You have never lent it back, because nothing you call is able to.
